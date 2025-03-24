@@ -128,24 +128,20 @@
     transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s; 
   }
   .tertiary:hover {
-    color: #ffffff;
-  }
-  .tertiary:hover::before {
-    color: #ffffff;
-    content: 'Enviar';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 300%;
-    height: 300%;
-    background-color:#1866a5;
-    transition: all 0.4s ease;
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    }
-  .tertiary:active {
-    background-color: #0b1520;
-    color: white;
+    background-color: #1866a5;
+    border: 2px solid #1866a5;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 8px;
+    padding: 8px 24px;
+    height: 42px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .quarta:hover {
    color: #0b1520;
@@ -293,7 +289,12 @@ input[type="text"] {
   color: #0b1520;
   font-size: 18px;
   font-weight: bold;
-  margin-bottom: 24px;
   margin-top: 0;
   text-align: center;
 }
+a{
+	  color: #fff;
+  }
+  a:Active{
+	  color: #0b1520;
+  }
